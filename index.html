@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="enter city name" spellcheck="false">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            
+        </div>
+        <!-- <div class="error">
+            <p>Invalid City Name</p>
+        </div> -->
+        <div class="weather">
+            <!-- <i class="humidity0 fa-solid fa-water"></i> -->
+            <img src="img1.jpg" alt="" class="weather-icon">
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">New York</h2>
+            <div class="details">
+                <div class="col">
+                     <i class="humidity1 fa-solid fa-water" style="height: 50px;"></i>
+                     <div>
+                        <p class="humidity">50%</p>
+                        <p>humidity</p>
+                     </div>
+                </div>
+                <div class="col">
+                    <i class="humidity1 fa-solid fa-wind" style="height: 50px;"></i>
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>wind speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script>
+        const apiKey = "f00d9a18cfe8bd7d96f7530cfa66f8d5";
+        const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=matric&q=bangalore";
+        async function checkWeather(){
+        const response = await fetch(apiUrl + `&appid=${apiKey}`);
+        var data = await response.json();
+
+        console.log(data);
+        }
+        checkWeather();
+    </script> -->
+    <script src="script.js"></script>
+</body>
+</html>
